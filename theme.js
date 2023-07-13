@@ -1,5 +1,5 @@
 // Establecemos una variable global
-let darkModeState = false
+let darkModeState = true
 
 // Guardamos el elemento por su id toggle
 const toggleBtn = document.getElementById('toogle')
