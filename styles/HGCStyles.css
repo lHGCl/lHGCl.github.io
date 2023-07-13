@@ -1,3 +1,24 @@
+/* Estilos para el modo light*/
+:root{
+    --bg: #e1e1e1;
+    --text: #333;
+}
+
+/* Estilos para el modo oscuro */
+:root.dark{
+        --bg: #141415;
+        --text: #eee;
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
+    /*Trnasicion para el cambio de colores entre el modo light y el modo dark*/
+    transition: background, color 900ms ease;
+}
+
+
+/* clase Contenedor para centrar todo dentro del body */
 .container {
     display: flex;
     justify-content: center;
@@ -5,6 +26,7 @@
     height: 100vh;
 }
 
+/*clase Centramos el texto*/
 .centered-text {
     text-align: center;
 }
