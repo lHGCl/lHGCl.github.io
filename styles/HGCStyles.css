@@ -6,8 +6,8 @@
 
 /* Estilos para el modo oscuro */
 :root.dark{
-        --bg: #141415;
-        --text: #eee;
+    --bg: #141415;
+    --text: #eee;
 }
 
 body{
@@ -15,6 +15,23 @@ body{
     color: var(--text);
     /*Trnasicion para el cambio de colores entre el modo light y el modo dark*/
     transition: background, color 900ms ease;
+}
+
+.flags{
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags__item{
+    width: 30px;
+}
+
+.flags__img{
+    display: block;
+    cursor: pointer;
+
 }
 
 

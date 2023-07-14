@@ -26,10 +26,6 @@ function setSchemeState(state) {
 // localStorage
 toggleDarkMode(localStorage.getItem('dark-mode') === 'true')
 
-// Escuchamos los cambios en las configuración del
-// del sistema operativo para alternar de tema
-getScheme.addListener(evt => toggleDarkMode(evt.matches))
-
 // Movemos el manejador del evento click del botón al final
 toggleBtn.addEventListener('click', () => {
   // Negamos el valor guardado dentro de la función toggleDarkMode
